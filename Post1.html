@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 <div class="post-title">
-                        <h1 class="title">Lf swimming kasama</h1>
+                        <h1 id="post-title-area" class="title">Lf swimming kasama</h1>
                 </div>  
                 <div class="post-type">
                     <div class="type-background">
@@ -111,8 +111,7 @@
                     </div>
                 </div>
                 <div class="post-content">
-                    <p class="content">Swimming</p>
-                    <p class="content">Hi!! Are there people interested in swimming at razon every Wednesday and Thursday?</p>
+                    <p id="post-contents-area" class="content">Swimming <br> Hi!! Are there people interested in swimming at razon every Wednesday and Thursday?</p>
                 </div>
                 <div class="icon-container">
                     <div class="comment-icon-container">
@@ -129,34 +128,34 @@
                         <img class="save-icon" src="CCAPDEV-LOGO-2\6.png">
                         <span class="save-text">Save</span>
                     </button>
+                <button onclick="location.href='edit-Post1.html'" class="edit">
+                    <img class="edit-icon" src="CCAPDEV-LOGO-2/8.png">
+                    <span class="edit-text">Edit</span>
+                </button>
 
-                    <div class="dropdown-more">
-                        <button href="" class="more">
-                            <img class="more-icon" src="CCAPDEV-LOGO-2/7.png">
-                        </button>
-                        <div class="dropdown-more-content">
-                            <a href="edit-Post1.html">Edit Post</a>
-                            <a href="#" onclick="openForm()">Delete Post</a>
-                        </div>
-                        <div class="delete-popup" id="popup">
-                        <form action="general.html" class="form-container">
-                            <h2 id="delbox">Are you Sure You Want to Delete This?</h2>
-                            <button type="submit" class="del-btn">Yes</button>
-                            <button type="button" class="del-btn cancel" onclick="closeForm()">No</button>
-                        </form>
-                        </div>
-                        <script>
-                        function openForm() {
-                            
-                            document.getElementById("popup").style.display = "block";
-                        }
-                        
-                        function closeForm() {
-                            document.getElementById("popup").style.display = "none";
-                        }
-                        </script>
-                        </div>
+                <button class="delete" onclick="openForm()">
+                    <img class="delete-icon" src="CCAPDEV-LOGO-2/9.png" alt="Delete Icon">
+                    <span class="delete-text">Delete</span>
+                </button>
+                
+                <div class="delete-popup" id="popup">
+                    <form action="general.html" class="form-container">
+                        <h2 id="delbox">Are you Sure You Want to Delete This?</h2>
+                        <button type="submit" class="del-btn">Yes</button>
+                        <button type="button" class="del-btn cancel" onclick="closeForm()">No</button>
+                    </form>
                 </div>
+                
+                <script>
+                    function openForm() {
+                        document.getElementById("popup").style.display = "block";
+                    }
+                
+                    function closeForm() {
+                        document.getElementById("popup").style.display = "none";
+                    }
+                </script>
+                
             </div>
             <div class="bell-container">
                 <button class="bell">
